@@ -4,7 +4,6 @@
  */
 
 const fs = require('fs');
-const EventHandler = require('./utils/events');
 const Orthodrome = require('./utils/orthodrome');
 
 // Future of Voice coordinates
@@ -26,7 +25,6 @@ const NAME = /[a-z,0-9]{0,}/
 module.exports = class Customer {
 
     constructor(){
-        super();
         this.warnings = []; // error and warnings stack
     }
 
